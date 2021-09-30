@@ -26,7 +26,7 @@ Figure 1. Overview of the three datasets
 Once the datasets are loaded as DataFrames, we need to clean and transform them so we can merge them and have a tidy, organized and more reliable dataset in which further analysis can be performed.  The Wikipedia dataset is specially messy since different pages are edited by different people, and different movies can have different columns.  Therefore, it is necessary to apply a consistent methodology where the data is inspected, a plan to remove/transform errors is designed and executed, is performed over and over until a clean and organized table of data, where every row is a single movie, is produced.
 In general for this dataset, we keep only rows that correspond to movies, i.e. we remove series or tv shows. We also remove columns that have more than 90% of their values as `Null` values and remove alternative titles of the same movie keeping only one row per movie.  In addition, we convert and parse 4 different columns such every row has the same format and data type. These columns are: **Box office**, **Budget**, **Release date** and **Running time**.  Figure 2 shows and overview of the clean version for the Wikipedia dataset and its columns.
 
-
+![wiki_2](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_wiki_del2.png)
 Figure 2. Overview of the Clean and Organized Wikipedia dataset
 
 ### 3. Extract and Transform the Kaggle Data:
