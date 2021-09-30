@@ -34,7 +34,9 @@ Figure 2. Overview of the Clean and Organized Wikipedia dataset
 The Kaggle data is more structured than the Wikipedia dataset, but still needs some cleaning, specially needs converting some strings to the correct data type. In this case we again follow the same methodology of inspecting the data, planning a process for removing errors or bad data and then execute it. We use the `to_numeric()` method from Pandas to convert columns in string as numeric data type. These columns are: **budget**, **id** and **popularity**.  We use also `to_datetime` for the **release_date** column.  Finally, the three datasets are merged such that the Wikipedia and Kaggle data are merged first as a `movie_df` dataframe and then, this new dataframe is merged with the MovieLens ratings table.  The new dataframe is called `movies_with_ratings_df`.
 Figure 3 shows the two dataframes.
 
+![movies_3](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_movies_del3.png)
 
+![moviesrat_3](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_moviesrat_del3.png)
 Figure 3. Overview of the merged Kaggle/Wikipedia dataframe and the merged version with MovieLens ratings
 
 ### 4. Create the Movie Database:
