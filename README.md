@@ -43,5 +43,7 @@ Figure 3. Overview of the merged Kaggle/Wikipedia dataframe and the merged versi
 
 The four and last step is the importing of the dataframes as tables in a SQL database.  We import from Pandas-Python two dataframes: `movies_df` and `ratings` into PostgreSQL by using the method `to_sql`. Besides in PostgreSQL we verify that the two tables have the appropriate number of rows by making two queries that count the number of rows in each table.
 
+![movies_query](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/movies_query.png)
 
+![ratings_query](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/ratings_query.png)
 Figure 4. Movies and ratings Queries and their results.
