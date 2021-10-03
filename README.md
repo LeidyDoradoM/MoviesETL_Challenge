@@ -19,6 +19,7 @@ The function to read the three files is written in jupyter notebook.  We need to
 ![kaggle_1](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_kaggle_del1.png)
 
 ![ratings_1](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_ratings_del1.png)
+
 Figure 1. Overview of the three datasets
 
 ### 2. Extract and Transform the Wikipedia Data:
@@ -27,6 +28,7 @@ Once the datasets are loaded as DataFrames, we need to clean and transform them 
 In general for this dataset, we keep only rows that correspond to movies, i.e. we remove series or tv shows. We also remove columns that have more than 90% of their values as `Null` values and remove alternative titles of the same movie keeping only one row per movie.  In addition, we convert and parse 4 different columns such every row has the same format and data type. These columns are: **Box office**, **Budget**, **Release date** and **Running time**.  Figure 2 shows and overview of the clean version for the Wikipedia dataset and its columns.
 
 ![wiki_2](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_wiki_del2.png)
+
 Figure 2. Overview of the Clean and Organized Wikipedia dataset
 
 ### 3. Extract and Transform the Kaggle Data:
@@ -37,6 +39,7 @@ Figure 3 shows the two dataframes.
 ![movies_3](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_movies_del3.png)
 
 ![moviesrat_3](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/df_moviesrat_del3.png)
+
 Figure 3. Overview of the merged Kaggle/Wikipedia dataframe and the merged version with MovieLens ratings
 
 ### 4. Create the Movie Database:
@@ -46,4 +49,5 @@ The four and last step is the importing of the dataframes as tables in a SQL dat
 ![movies_query](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/movies_query.png)
 
 ![ratings_query](https://raw.githubusercontent.com/LeidyDoradoM/MoviesETL_Challenge/main/Resources/ratings_query.png)
+
 Figure 4. Movies and ratings Queries and their results.
